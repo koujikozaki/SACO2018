@@ -1,6 +1,8 @@
 body {
   height: 300px;
   margin: 5px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .-btn {
@@ -12,8 +14,34 @@ img.item {
 	width: 100%;
 	height: auto;
 	cursor:pointer;
+	border-radius: 12px;
+	padding: 6px;
 }
 
 .active{
 	background-color: red;
+}
+
+ul.items {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.items li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+.items li:last-item() {
+	list-style: none;
+	margin-left: 0;
+}
+
+
+div.item_title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
 }
