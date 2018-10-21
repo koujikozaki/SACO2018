@@ -5,7 +5,6 @@ body {
 
 #container {
   height: 300px;
-  /*width: 300px;*/
   background-image: url("../img/distance.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,7 +12,6 @@ body {
 
 #space {
   width: 800px;
-  /*height: 100px;*/
 }
 
 #line {
@@ -54,7 +52,7 @@ body {
 }
 
 .run-spaceshuttle-success {
-  animation: spaceshuttle-success 5s ease;
+  animation: spaceshuttle-success 5s ease forwards;
 }
 
 @keyframes spaceshuttle-success {
@@ -64,7 +62,7 @@ body {
 }
 
 .run-spaceshuttle-failure {
-  animation: spaceshuttle-failure 5s ease-out;
+  animation: spaceshuttle-failure 5s ease-out forwards;
 }
 
 @keyframes spaceshuttle-failure {
