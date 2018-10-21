@@ -1,0 +1,51 @@
+body {
+  height: 300px;
+  margin: 5px;
+}
+
+.onoff-btn {
+   width: 100px;
+}
+
+
+#swCat{
+	cursor:pointer;
+	width:100px;
+	height:100px;
+	background-image:url(../img/catOnOff.png);
+}
+.active{
+	background-position:bottom;
+}
+
+#swLetter{
+	cursor:pointer;
+	width:100px;
+	height:100px;
+	background-image:url(../img/letterOnOff.png);
+}
+.active{
+	background-position:bottom;
+}
+
+#swSmartPhone{
+	cursor:pointer;
+	width:100px;
+	height:100px;
+	background-image:url(../img/SmartPhoneOnOff.png);
+}
+.active{
+	background-position:bottom;
+}
+
+#swGame{
+	cursor:pointer;
+	width:100px;
+	height:100px;
+	background-image:url(../img/gameOnOff.png);
+}
+.active{
+	background-position:bottom;
+}
+
+
