@@ -15,16 +15,15 @@
         <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<div id="mes">
-		<img border="0" src="img/EarthFull.jpg" width="150">
-		<strong><font size="6">から</font></strong>
+	<div id="transport">
+		<img class="star from" src="img/EarthFull.jpg">
+		から
+		<script>
+			$('#transport').append(
+				'<img class="star to" src="img/'+dest+'.jpg">');
+		</script>
+		に
 	</div>
-	<script>
-		$('#mes').append(
-			'<strong><font size="6"><img border="0" src="img/'+dest+'.jpg" width="150">に</font></strong>');
-		//$('#mes').append('<p>'+dest+'へ送るよ'+'</p>');
-		//alert(dest);
-	</script>
 	<div class="item_title">「何を」持ってく？</div>
 	<ul class="items">
 		<li><img src="img/items/cat.png" class="item"></li>

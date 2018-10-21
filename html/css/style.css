@@ -18,6 +18,26 @@ img.item {
 	padding: 6px;
 }
 
+img.star {
+	max-width: 150px;
+	width: 100%;
+	height: auto;
+	cursor:pointer;
+	border-radius: 12px;
+	padding: 12px;
+	background-color: black;
+}
+
+.from {
+	margin-right: 25px;
+}
+
+.to {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+
 .active{
 	background-color: red;
 }
@@ -39,9 +59,19 @@ ul.items {
 	margin-left: 0;
 }
 
+#transport {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
 
 div.item_title {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
+	margin: 30px 0;
 }
