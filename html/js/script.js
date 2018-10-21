@@ -5,6 +5,11 @@ $(function () {
 	$(".item").click(function(){
 		$(this).toggleClass("active");
 	});
+  
+  $("#run").click(() => {
+    $("#spaceshuttle").removeClass("run-spaceshuttle-anime")
+                      .addClass("run-spaceshuttle-anime");
+  });
 });
 
 //GETƒpƒ‰ƒ[ƒ^‚Ìˆ—
