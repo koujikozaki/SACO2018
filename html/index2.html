@@ -20,18 +20,44 @@
 		から
 		<script>
 			$('#transport').append(
-				'<img class="star to" src="img/'+dest+'.jpg">');
+				'<img class="star to" src="img/' + dest + '">');
 		</script>
 		に
 	</div>
 	<div class="item_title">「何を」持ってく？</div>
 	<ul class="items">
-		<li><img src="img/items/cat.png" class="item"></li>
-		<li><img src="img/items/letter.png" class="item"></li>
+		<li><img src="img/items/PC.png" class="item"></li>
 		<li><img src="img/items/SmartPhone.png" class="item"></li>
+		<li><img src="img/items/bike.png" class="item"></li>
+		<li><img src="img/items/book.png" class="item"></li>
+		<li><img src="img/items/budo.png" class="item"></li>
+		<li><img src="img/items/cat.png" class="item"></li>
 		<li><img src="img/items/game.png" class="item"></li>
+		<li><img src="img/items/juice.png" class="item"></li>
+		<li><img src="img/items/kanransya.png" class="item"></li>
+		<li><img src="img/items/koinobori.png" class="item"></li>
+		<li><img src="img/items/letter.png" class="item"></li>
+		<li><img src="img/items/obake.png" class="item"></li>
+		<li><img src="img/items/soft.png" class="item"></li>
+		<li><img src="img/items/tulip.png" class="item"></li>
+		<li><img src="img/items/yakyu.png" class="item"></li>
+		<li><img src="img/items/yukidaruma.png" class="item"></li>
 	</ul>
-	<a href="javascript:submit();" class="buttonSubmit">決定！</a>
-	<footer>Copyright &copy; SACO ノアの箱船プロジェクト</footer>
+	<a href="javascript:go();" class="buttonSubmit">決定！</a>
+	<footer>Copyright &copy; SACO 宇宙船ノアの箱船プロジェクト</footer>
+	<script>
+		var dest = param['dest'];
+		function go() {
+			param['success'] = "true";
+			var belongings = [];
+			$(".item.active").each(function(i, o){
+				belongings.push($(o).attr('src'));
+			});
+			param['belongings'] = belongings;
+			all_set = JSON.stringify(param);
+			window.location.href = 'index3.html?json=' + all_set;
+		}
+
+	</script>
 </body>
 </html>

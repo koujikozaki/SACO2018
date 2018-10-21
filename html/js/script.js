@@ -1,5 +1,4 @@
 var param = getParameter();
-var dest = param['d'];
 
 $(function () {
 	$(".item").click(function(){
@@ -29,4 +28,3 @@ function getParameter()
     }
     return result;
 }
-
