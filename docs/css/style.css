@@ -1,0 +1,123 @@
+body {
+  height: 300px;
+  margin: 5px;
+  max-width: 800px;
+  width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+img.item {
+	max-width: 100px;
+	width: 100%;
+	height: auto;
+	cursor:pointer;
+	border-radius: 12px;
+	padding: 6px;
+}
+
+img.star {
+	max-width: 150px;
+	width: 100%;
+	height: auto;
+	cursor:pointer;
+	border-radius: 12px;
+	padding: 12px;
+	background-color: black;
+}
+
+.from {
+	margin-right: 25px;
+}
+
+.to {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+
+.active{
+	background-color: red;
+}
+
+ul.stars,
+ul.items {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+ul.items {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.stars li,
+.items li {
+	list-style: none;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.items li:last-item() {
+	list-style: none;
+	margin-left: 0;
+}
+
+#transport {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+div.item_title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.buttonSubmit {
+	display: block;
+	width: 200px;
+	height: 24px;
+	text-align: center;
+	border-radius: 6px;
+	background-color: red;
+	color: white;
+	line-height: 24px;
+	font-size: 24px;
+	padding: 12px 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+ }
+
+footer {
+ 	text-align: center;
+ 	font-size: 16px;
+ 	margin-top: 30px;
+ }
+
+h1 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.imgTitle {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
