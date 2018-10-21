@@ -20,7 +20,7 @@
 		から
 		<script>
 			$('#transport').append(
-				'<img class="star to" src="img/'+dest+'.jpg">');
+				'<img class="star to" src="img/' + dest + '">');
 		</script>
 		に
 	</div>
@@ -43,7 +43,21 @@
 		<li><img src="img/items/yakyu.png" class="item"></li>
 		<li><img src="img/items/yukidaruma.png" class="item"></li>
 	</ul>
-	<a href="javascript:submit();" class="buttonSubmit">決定！</a>
+	<a href="javascript:go();" class="buttonSubmit">決定！</a>
 	<footer>Copyright &copy; SACO 宇宙船ノアの箱船プロジェクト</footer>
+	<script>
+		var dest = param['dest'];
+		function go() {
+			param['success'] = "true";
+			var belongings = [];
+			$(".item.active").each(function(i, o){
+				belongings.push($(o).attr('src'));
+			});
+			param['belongings'] = belongings;
+			all_set = JSON.stringify(param);
+			window.location.href = 'index3.html?json=' + all_set;
+		}
+
+	</script>
 </body>
 </html>
