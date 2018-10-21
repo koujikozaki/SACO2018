@@ -48,7 +48,6 @@
 	<script>
 		var dest = param['dest'];
 		function go() {
-			alert($(".item.active").length);
 			param['success'] = judge($(".item.active").length, dest.replace(/\.[^/.]+$/, ""));
 			var belongings = [];
 			$(".item.active").each(function(i, o){
