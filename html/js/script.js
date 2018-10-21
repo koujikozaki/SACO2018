@@ -4,8 +4,6 @@ var dest = param['d'];
 $(function () {
 	$(".item").click(function(){
 		$(this).toggleClass("active");
-	//	var flg = $("#swCat").hasClass("active");
-	//	alert(flg);
 	});
 });
 
