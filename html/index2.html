@@ -47,14 +47,14 @@
 	<script>
 		var dest = param['dest'];
 		function go() {
-			param['success'] = "true";
+			param['success'] = false;
 			var belongings = [];
 			$(".item.active").each(function(i, o){
-				belongings.push($(o).attr('src'));
+				belongings.push($(o).attr('src').split('/').pop());
 			});
 			param['belongings'] = belongings;
 			all_set = JSON.stringify(param);
-			window.location.href = 'index3.html?json=' + all_set;
+			window.location.href = 'index3.html?params=' + all_set;
 		}
 
 	</script>
