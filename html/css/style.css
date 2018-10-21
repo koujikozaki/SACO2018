@@ -50,6 +50,13 @@ ul.items {
 	align-items: flex-start;
 }
 
+ul.items {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 .stars li,
 .items li {
 	list-style: none;
