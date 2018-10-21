@@ -1,6 +1,12 @@
 body {
   height: 300px;
   margin: 5px;
+  max-width: 600px;
+  width: 100%;
+}
+
+a {
+	text-decoration: none;
 }
 
 .-btn {
@@ -12,7 +18,29 @@ img.item {
 	width: 100%;
 	height: auto;
 	cursor:pointer;
+	border-radius: 12px;
+	padding: 6px;
 }
+
+img.star {
+	max-width: 150px;
+	width: 100%;
+	height: auto;
+	cursor:pointer;
+	border-radius: 12px;
+	padding: 12px;
+	background-color: black;
+}
+
+.from {
+	margin-right: 25px;
+}
+
+.to {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
 
 .active{
 	background-color: red;
