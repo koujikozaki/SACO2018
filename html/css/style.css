@@ -9,53 +9,6 @@ a {
 	text-decoration: none;
 }
 
-#space {
-  width: 100%;
-  height: 100px;
-  position: relative;
-}
-
-#planet-container {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.planet, .planet>img {
-  width: 100px;
-  height: 100px;
-  z-index: 10;
-}
-
-.planet:last-child, .planet>img:last-child {
-  float: right;
-}
-
-#spaceshuttle {
-  display: block;
-  transform: rotate(90deg);
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 10%;
-  z-index: 100;
-}
-
-.run-spaceshuttle-anime {
-  animation: spaceshuttle-anime 4s ease;
-}
-
-@keyframes spaceshuttle-anime {
-  0% {left: 0;}
-  100% {left: calc(100% - 100px);}
-}
-
-.-btn {
-   width: 100px;
-}
-
 img.item {
 	max-width: 100px;
 	width: 100%;
