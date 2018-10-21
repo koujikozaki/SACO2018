@@ -3,9 +3,22 @@ body {
   margin: 5px;
 }
 
+#container {
+  height: 300px;
+  background-image: url("../img/distance.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #space {
-  width: 100%;
-  height: 100px;
+  width: 800px;
+}
+
+#line {
+  padding: 170px 0 0 0;
+}
+
+#line-container {
   position: relative;
 }
 
@@ -30,29 +43,30 @@ body {
 #spaceshuttle {
   display: block;
   transform: rotate(90deg);
-  width: 80px;
-  height: 80px;
+  margin: 30px 0 0 0;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  top: 10%;
+  left: 30px;
   z-index: 100;
 }
 
 .run-spaceshuttle-success {
-  animation: spaceshuttle-success 4s ease;
+  animation: spaceshuttle-success 5s ease forwards;
 }
 
 @keyframes spaceshuttle-success {
-  0% {left: 0;}
-  50% {left: calc(50% - 100px);}
+  0% {left: 30px;}
+  70% {left: calc(50% - 100px);}
   100% {left: calc(100% - 100px);}
 }
 
 .run-spaceshuttle-failure {
-  animation: spaceshuttle-failure 4s ease-out;
+  animation: spaceshuttle-failure 5s ease-out forwards;
 }
 
 @keyframes spaceshuttle-failure {
-  0% {left: 0;}
-  50% {left: calc(50% - 100px); top: 0; transform: rotate(90deg);}
-  100% {left: calc(80% - 100px); top: 400px; transform: rotate(180deg);}
+  0% {left: 30px; top: 0;}
+  70% {left: calc(50% - 100px); top: 0; transform: rotate(90deg);}
+  100% {left: calc(80% - 100px); top: 150px; transform: rotate(180deg);}
 }

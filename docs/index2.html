@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/calc.js"></script>
 </head>
 <body>
 	<div id="transport">
@@ -47,7 +48,7 @@
 	<script>
 		var dest = param['dest'];
 		function go() {
-			param['success'] = false;
+			param['success'] = judge($(".item.active").length, dest.replace(/\.[^/.]+$/, ""));
 			var belongings = [];
 			$(".item.active").each(function(i, o){
 				belongings.push($(o).attr('src').split('/').pop());
