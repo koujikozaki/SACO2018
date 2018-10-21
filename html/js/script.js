@@ -1,34 +1,11 @@
 var param = getParameter();
 var dest = param['d'];
 
-
-
 $(function () {
-	$("#swCat").click(function(){
+	$(".item").click(function(){
 		$(this).toggleClass("active");
 	//	var flg = $("#swCat").hasClass("active");
 	//	alert(flg);
-	});
-});
-
-
-$(function () {
-	$("#swLetter").click(function(){
-		$(this).toggleClass("active");
-	});
-});
-
-
-$(function () {
-	$("#swSmartPhone").click(function(){
-		$(this).toggleClass("active");
-	});
-});
-
-
-$(function () {
-	$("#swGame").click(function(){
-		$(this).toggleClass("active");
 	});
 });
 
